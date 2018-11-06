@@ -3,8 +3,9 @@
    background-color: blueviolet;
     border: 1px solid rgb(240, 55, 55);
     display:grid;
+    grid-gap: 20px;
     grid-template-columns:  1fr 1fr;
-    grid-template-rows: 12fr 2fr 2fr 2fr 1fr;
+    grid-template-rows: 400px 1fr 1fr 1fr 200px ;
     grid-template-areas: 
     "header header"
     "articleH1 articleH1"
@@ -15,44 +16,112 @@
 }
 .header{
 background-image: url(../images/123.jpg);
+background-repeat: no-repeat;
 border: 1px solid #000;
 grid-area: header;
+text-align: center;
+}
+
+.header>h1{
+    border: 1px solid #000;
+    color: white;
+    padding-top: 50px;
+    font-size: 4em;
 }
 .articleH1{
     background-color: aquamarine;
-    border: 1px solid #000;
+    border: 1px solid rgb(148, 41, 125);
     grid-area: articleH1;
-    
+    justify-content: center;
+    text-align: center;
+}
+.divTextArticle{
+   
 }
 .articleH2{
     background-color: aquamarine;
     border: 1px solid #000;
     grid-area: articleH2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     
 }
+.divArticle2{
+   width: 300px;
+   border: 1px solid #000;
+   text-align: center;
+}
+.picturesArticlesH2{
+
+}
+/*aside---------------------------------------------*/
 .asideLeft{
     background-color: aquamarine;
     border: 1px solid #000;
     grid-area: asideLeft;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image-aside{
+border: 2px solid #000;
+width: auto;
+height: auto;
 }
 .asideRight{
     background-color: aquamarine;
     border: 1px solid #000;
     grid-area: asideRight;
-
+    padding: 50px;
 }
+/*footer--------------------------------------------------*/
 .footer{
     background-color: aquamarine;
     border: 1px solid #000;
     grid-area: footer;
+    display:flex;
+    justify-content: space-around;
 }
+
+.footer-Left {
+border: 1px solid #000;
+display: flex;
+flex-direction: column;
+
+}
+
+i{
+    font-size: 2em;
+    padding-bottom: 5px;
+}
+
+.footer-right{
+border: 1px solid #000;
+display: flex;
+flex-direction: column;
+}
+
+
+
 ul{
     list-style: none;
     
 }
 .item>a{
+   /* background-color: gray;*/
     color: white;
     text-decoration: none;
     font-size: 2em;
 }
+a:hover{
+    background-color: rgb(255, 91, 140);
+}
+.headerUl{
+    border: 1px solid rgb(81, 218, 104);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
